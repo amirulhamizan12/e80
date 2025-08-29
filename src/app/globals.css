@@ -1,16 +1,26 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'RocaOne-Rg';
+  src: url('/fonts/RocaOne-Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-xl: 1045px;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
