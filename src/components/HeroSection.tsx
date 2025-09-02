@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import Image from 'next/image';
 
@@ -31,6 +33,7 @@ const HeroSection: React.FC = () => {
                   width={400}
                   height={400}
                   className="w-full max-w-[350px] md:max-w-[450px] aspect-square object-contain"
+                  draggable={false}
                 />
               </div>
             
@@ -104,6 +107,7 @@ const HeroSection: React.FC = () => {
                 width={600}
                 height={600}
                 className="w-full max-w-[400px] xl:max-w-[600px] aspect-square object-contain"
+                draggable={false}
               />
             </div>
           </div>

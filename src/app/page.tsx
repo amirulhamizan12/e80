@@ -1,8 +1,8 @@
 import Header from "../components/Header";
-import HeroSection from "../components/Section1";
-import ResearchPreviewBanner from "../components/Section2";
-import JoinPreviewSection from "../components/Section3";
-import ImageShowcase from "../components/Section4";
+import HeroSection from "../components/HeroSection";
+import PreviewBanner from "../components/PreviewBanner";
+import SuperwizardSection from "../components/SuperwizardSection";
+import FAQSection from "../components/FAQSection";
 
 export default function Home() {
   return (
@@ -10,9 +10,9 @@ export default function Home() {
       <Header />
       <div className="pt-16">
         <HeroSection />
-        <ResearchPreviewBanner />
-        <JoinPreviewSection />
-        <ImageShowcase />
+        <PreviewBanner />
+        <SuperwizardSection />
+        <FAQSection />
       </div>
     </div>
   );

@@ -56,7 +56,7 @@ export default function Header() {
                       letterSpacing="0.02em"
                       className="xl:text-lg md:text-base text-sm"
                     >
-                      <tspan x="34.761" y="22.2635">
+                      <tspan x="40" y="21">
                         50000
                       </tspan>
                     </text>

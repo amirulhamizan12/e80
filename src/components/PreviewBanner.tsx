@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { PiFlaskFill } from "react-icons/pi";
 
-const ResearchPreviewBanner = () => {
+const PreviewBanner = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
@@ -77,4 +77,4 @@ const ResearchPreviewBanner = () => {
   );
 };
 
-export default ResearchPreviewBanner;
+export default PreviewBanner;
