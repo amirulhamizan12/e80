@@ -15,7 +15,7 @@ const FONTS = {
   primary: 'RocaOne-Rg, sans-serif'
 } as const;
 
-const SuperwizardSection: React.FC = () => {
+const SubHero: React.FC = () => {
   return (
     <section 
       className="flex flex-col justify-center items-center xl:px-16 md:px-8 px-5" 
@@ -65,4 +65,4 @@ const SuperwizardSection: React.FC = () => {
   );
 };
 
-export default SuperwizardSection;
+export default SubHero;

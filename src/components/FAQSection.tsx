@@ -66,12 +66,13 @@ const FAQSection: React.FC = () => {
       <div className="w-full max-w-[800px]">
         {/* FAQ Title */}
         <h2 
-          className="text-center mb-8 text-4xl md:text-5xl"
+          className="text-center mb-8"
           style={{
             color: COLORS.faqText,
             fontFamily: FONTS.primary,
             fontWeight: '500',
-            letterSpacing: '-0.02em'
+            letterSpacing: '-0.02em',
+            fontSize: 'clamp(32px, 6vw, 44px)'
           }}
         >
           FAQs
@@ -90,10 +91,9 @@ const FAQSection: React.FC = () => {
                   style={{ color: COLORS.faqText }}
                 >
                   <span 
-                    className="font-medium pr-4"
+                    className="font-medium pr-4 text-[20px] md:text-[22px]"
                     style={{ 
                       fontFamily: FONTS.primary,
-                      fontSize: '22px',
                       lineHeight: '1.4'
                     }}
                   >
@@ -101,7 +101,7 @@ const FAQSection: React.FC = () => {
                   </span>
                   
                   <div 
-                    className="flex-shrink-0 w-6 h-6 flex items-center justify-center transition-transform duration-700 ease-in-out"
+                    className="flex-shrink-0 w-6 h-6 flex items-center justify-center transition-transform duration-500 ease-in-out"
                     style={{ 
                       transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
                       color: COLORS.faqText
@@ -123,7 +123,7 @@ const FAQSection: React.FC = () => {
                 
                 {/* Answer Content */}
                 <div 
-                  className="overflow-hidden transition-all duration-700 ease-in-out"
+                  className="overflow-hidden transition-all duration-500 ease-in-out"
                   style={{
                     maxHeight: isOpen ? '200px' : '0px',
                     opacity: isOpen ? 1 : 0
